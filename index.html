@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP Hero Section with Custom Cursor</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-gray-900 text-white overflow-hidden">
+  <div id="cursor" class="cursor"></div>
+  <section class="hero-section relative flex items-center justify-center min-h-screen bg-cover bg-center">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="text-wrapper">
+      <h1 class="text-4xl md:text-6xl font-bold text-gradient opacity-0 transform translate-y-20 text-center " id="hero-title">
+       Gsap Animation and Cursor Animation
+      </h1>
+      <p class="mt-4 text-2xl md:text-xl text-gray-300 opacity-0 transform translate-y-20 text-center" id="hero-subheading">
+        "Perfectly Balanced, As All Things Should Be."
+      </p>
+      <p class="mt-6 text-xl md:text-base text-gray-400 opacity-0 transform translate-y-20 text-center" id="hero-additional">
+        "The hardest choices require the strongest wills."
+      </p>
+   
+    </div>
+  </section>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
