@@ -14,11 +14,6 @@ window.addEventListener("load", () => {
     { opacity: 0, scale: 0.8 },
     { opacity: 1, scale: 1, duration: 1.5, ease: "power3.out", delay: 1.5 }
   );
-  gsap.fromTo(
-    "#hero-button",
-    { opacity: 0, scale: 0.95 },
-    { opacity: 1, scale: 1, duration: 1.5, ease: "power3.out", delay: 2 }
-  );
   const cursor = document.getElementById("cursor");
   document.addEventListener("mousemove", (e) => {
     gsap.to(cursor, {
@@ -27,7 +22,7 @@ window.addEventListener("load", () => {
       duration: 0.1,
     });
   });
-  const cursorElements = document.querySelectorAll("#hero-button, #hero-title");
+  const cursorElements = document.querySelectorAll("#hero-title");
 
   cursorElements.forEach((element) => {
     element.addEventListener("mouseenter", () => {
@@ -36,12 +31,5 @@ window.addEventListener("load", () => {
     element.addEventListener("mouseleave", () => {
       cursor.classList.remove("cursor-active");
     });
-  });
-  const button = document.getElementById("hero-button");
-  button.addEventListener("mouseenter", () => {
-    cursor.classList.add("cursor-hover");
-  });
-  button.addEventListener("mouseleave", () => {
-    cursor.classList.remove("cursor-hover");
   });
 });
